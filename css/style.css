@@ -14,6 +14,13 @@
 
   --transition025: all 0.25s linear;
   --transition01: all 0.1s linear;
+
+  --link-padding-sm: 0.2em 0.2em 0.2em 0;
+  --link-padding-md: 0.2em 0.2em 0.2em 0;
+  --link-padding-lg: 0.2em 0.2em 0.2em 0;
+  --link-margin-sm: 0.1em 0 0.1em 0;
+  --link-margin-md: 0.1em 0 0.1em 0;
+  --link-margin-lg: 0.1em 0 0.1em 0;
 }
 .lightmode {
   --clr-primary: rgb(255, 187, 0);
@@ -33,6 +40,8 @@ body {
 section {
   padding: 1.5em 1em 1.5em 1em;
   min-height: 100vh;
+  width: 94%;
+  margin: auto;
 }
 h1 {
   font-size: 3.3rem;
@@ -63,7 +72,6 @@ button {
   background-color: transparent;
   color: var(--clr-primary);
   border: var(--btn-border-accent);
-  /* border-radius: var(--btn-radius); */
   transition: var(--transition025);
 }
 button:hover {
@@ -162,6 +170,11 @@ button:hover {
 /* END OF HOME SECTION */
 
 /* PROJECT SECTION */
+.project-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .project-items {
   display: grid;
   grid-template-columns: auto;
@@ -185,6 +198,7 @@ button:hover {
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: -1;
 }
 .project-img {
   /* ostavicu mogucnost da vidim sa slikom posle.. */
@@ -203,6 +217,41 @@ button:hover {
   text-decoration: none;
   font-size: 1.2em;
   color: var(--clr-accent);
-  padding: 0.2em 0.2em 0.2em 0;
+  padding: var(--link-padding-sm);
+  margin: var(--link-margin-sm);
+  transition: var(--transition025);
+}
+.project-link:hover {
+  cursor: pointer;
+  background-color: var(--clr-primary);
+  padding-left: 1em;
 }
 /* END OF PROJECT SECTION */
+
+/* CONTACT SECTION */
+.section-title {
+  margin: 0 0 0.5em 0;
+}
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact-links {
+  display: flex;
+  flex-direction: column;
+}
+.contact-link {
+  font-size: 1.2em;
+  color: var(--clr-accent);
+  text-decoration: none;
+  padding: var(--link-padding-sm);
+  margin: var(--link-margin-sm);
+  transition: var(--transition025);
+}
+.contact-link:hover {
+  cursor: pointer;
+  background-color: var(--clr-primary);
+  padding-left: 1em;
+}
+/* END OF CONTACT SECTION */
