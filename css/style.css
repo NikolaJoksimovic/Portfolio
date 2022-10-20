@@ -1,0 +1,208 @@
+:root {
+  --clr-primary: rgb(2, 173, 173);
+  --clr-accent: rgb(41, 241, 148);
+  --clr-secondary: black;
+
+  --bg-primary: linear-gradient(45deg, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 1));
+
+  --font-primary: "Josefin Sans", sans-serif;
+
+  --btn-border-primary: 0.15em solid var(--clr-primary);
+  --btn-border-accent: 0.15em solid var(--clr-accent);
+  --btn-border-secondary: 0.15em solid var(--clr-secondary);
+  --btn-radius: 15px;
+
+  --transition025: all 0.25s linear;
+  --transition01: all 0.1s linear;
+}
+.lightmode {
+  --clr-primary: rgb(255, 187, 0);
+  --clr-secondary: white;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: var(--font-primary);
+  font-weight: 500;
+  background: var(--bg-primary);
+  color: var(--clr-primary);
+}
+section {
+  padding: 1.5em 1em 1.5em 1em;
+  min-height: 100vh;
+}
+h1 {
+  font-size: 3.3rem;
+  text-transform: capitalize;
+  padding: 0.1rem;
+}
+h3 {
+  font-size: 1.8rem;
+  padding: 0.1rem;
+}
+h4 {
+  font-size: 1.3rem;
+  padding: 0.1rem;
+}
+p {
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  line-height: 1.5em;
+  padding: 0.1rem;
+}
+button {
+  font-size: 1.1em;
+  font-weight: 700;
+  padding: 0.5em;
+  margin: 0 0.3em 0 0.3em;
+  cursor: pointer;
+
+  background-color: transparent;
+  color: var(--clr-primary);
+  border: var(--btn-border-accent);
+  /* border-radius: var(--btn-radius); */
+  transition: var(--transition025);
+}
+button:hover {
+  background-color: var(--clr-accent);
+  border: var(--btn-border-primary);
+  color: var(--clr-secondary);
+}
+@media only screen and (max-height: 475px) {
+  section {
+    min-height: 475px;
+  }
+}
+@media screen and (min-width: 768px) {
+  section {
+    padding: 2.5em 2em 2.5em 2em;
+    width: 80%;
+    margin: auto;
+  }
+  h1 {
+    font-size: 3.5rem;
+    padding: 0.2rem;
+  }
+  h3 {
+    font-size: 2rem;
+    padding: 0.2rem;
+  }
+  h4 {
+    font-size: 1.5rem;
+    padding: 0.2rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+  button {
+    font-size: 1.2em;
+  }
+}
+@media screen and (min-width: 1080px) {
+  section {
+    padding: 2.5em 2em 2.5em 2em;
+  }
+  h1 {
+    font-size: 3.8rem;
+    padding: 0.3rem;
+  }
+  h3 {
+    font-size: 2.3rem;
+    padding: 0.3rem;
+  }
+  p {
+    font-size: 1.4rem;
+  }
+  button {
+    font-size: 1.4em;
+  }
+}
+@media screen and (min-width: 1920px) {
+  section {
+    max-width: 1920px;
+  }
+}
+/* HOME SECTION */
+.home-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.myName {
+  max-width: 400px;
+}
+.underline {
+  width: 100%;
+  height: 0.2em;
+  background-color: var(--clr-accent);
+  margin: 0 0 0.1em 0;
+}
+.about {
+  padding-right: 2em;
+}
+@media screen and (min-width: 768px) {
+  .underline {
+    width: 85%;
+  }
+  .about {
+    width: 85%;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .underline {
+    width: 80%;
+  }
+  .about {
+    width: 70%;
+  }
+}
+/* END OF HOME SECTION */
+
+/* PROJECT SECTION */
+.project-items {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 2em;
+}
+.project-item {
+  position: relative;
+  width: 100%;
+  border: 0.1rem solid var(--clr-primary);
+  padding: 0.5em;
+}
+.project-title {
+  color: var(--clr-accent);
+}
+.project-info {
+  padding: 1em 0.5em 0.5em 0;
+}
+.project-img-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.project-img {
+  /* ostavicu mogucnost da vidim sa slikom posle.. */
+  /* display: none; */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.1;
+  transition: var(--transition01);
+}
+.project-links {
+  display: flex;
+  flex-direction: column;
+}
+.project-link {
+  text-decoration: none;
+  font-size: 1.2em;
+  color: var(--clr-accent);
+  padding: 0.2em 0.2em 0.2em 0;
+}
+/* END OF PROJECT SECTION */
