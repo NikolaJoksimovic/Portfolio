@@ -12,7 +12,9 @@
   --btn-border-secondary: 0.15em solid var(--clr-secondary);
   --btn-radius: 15px;
 
+  --transition035: all 0.35s linear;
   --transition025: all 0.25s linear;
+  --transition015: all 0.15s linear;
   --transition01: all 0.1s linear;
 
   --link-padding-sm: 0.2em 0.2em 0.2em 0;
@@ -23,8 +25,17 @@
   --link-margin-lg: 0.1em 0 0.1em 0;
 }
 .lightmode {
-  --clr-primary: rgb(255, 187, 0);
-  --clr-secondary: white;
+  --bg-primary: linear-gradient(
+    45deg,
+    rgba(240, 240, 240, 0.95),
+    rgb(255, 255, 255)
+  );
+  --clr-primary: rgb(0, 0, 0);
+  --clr-secondary: rgb(250, 246, 246);
+  --clr-accent: rgb(62, 128, 182);
+  --btn-border-accent: 0.15em solid var(--clr-accent);
+  --btn-border-primary: 0.15em solid var(--clr-primary);
+  --btn-border-secondary: 0.15em solid var(--clr-secondary);
 }
 * {
   box-sizing: border-box;
@@ -36,6 +47,7 @@ body {
   font-weight: 500;
   background: var(--bg-primary);
   color: var(--clr-primary);
+  transition: var(--transition035);
 }
 section {
   padding: 1.5em 1em 1.5em 1em;
@@ -133,11 +145,53 @@ button:hover {
     max-width: 1920px;
   }
 }
+/* PRELOADER */
+.preloader {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--clr-secondary);
+  z-index: 999;
+  color: var(--clr-accent);
+}
+.preloader-hide {
+  display: none;
+}
 /* HOME SECTION */
 .home-section {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+.clr-btn {
+  position: absolute;
+  display: flex;
+  top: 1.5em;
+  right: 1.5em;
+  width: 1.4em;
+  height: 1.4em;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  outline: 0.2em solid var(--clr-accent);
+  outline-offset: -1px;
+  transition: var(--transition015);
+}
+.clr-btn:hover {
+  box-shadow: 0 0 0.5em 0.2em var(--clr-accent);
+}
+.clr-btn-left {
+  width: 50%;
+  background-color: var(--clr-primary);
+}
+.clr-btn-right {
+  width: 50%;
+  background-color: var(--clr-secondary);
 }
 .myName {
   max-width: 400px;
@@ -158,6 +212,12 @@ button:hover {
   .about {
     width: 85%;
   }
+  .clr-btn {
+    width: 1.8em;
+    height: 1.8em;
+    top: 1.8em;
+    right: 1.8em;
+  }
 }
 @media screen and (min-width: 1920px) {
   .underline {
@@ -165,6 +225,12 @@ button:hover {
   }
   .about {
     width: 70%;
+  }
+  .clr-btn {
+    width: 1.8em;
+    height: 1.8em;
+    top: 2.2em;
+    right: 2.2em;
   }
 }
 /* END OF HOME SECTION */
@@ -248,10 +314,11 @@ button:hover {
   padding: var(--link-padding-sm);
   margin: var(--link-margin-sm);
   transition: var(--transition025);
+  padding-left: 0.5em;
 }
 .contact-link:hover {
   cursor: pointer;
-  background-color: var(--clr-primary);
   padding-left: 1em;
+  background-color: var(--clr-primary);
 }
 /* END OF CONTACT SECTION */
