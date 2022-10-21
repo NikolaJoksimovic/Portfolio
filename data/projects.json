@@ -1,32 +1,35 @@
 [
   {
-    "title": "十面埋伏",
-    "info": "Game made for DESKTOP(prefered resolution 1920x1080). Also you need a keyboard to be able to play..I made this in collaboration with a friend who is currently in Sky-music studying to become a sound technician.He provides the sounds and i provide the code.",
+    "title": "十面埋伏 (House Of Flyig Daggers)",
+    "info": "Game made for DESKTOP(prefered resolution 1920x1080). Also you need a keyboard to be able to play.. I made this in collaboration with a friend who is currently in Sky-music studying to become a sound technician. He provides the sounds and i provide the code.",
     "preview_link": "https://nikolajoksimovic.github.io/sky-music-game/",
-    "code_link": "https://github.com/NikolaJoksimovic/sky-music-game"
+    "code_link": "https://github.com/NikolaJoksimovic/sky-music-game",
+    "tools": "",
+    "img": ""
   },
   {
-    "title": "十面埋伏",
-    "info": "Game made for DESKTOP(prefered resolution 1920x1080). Also you need a keyboard to be able to play..I made this in collaboration with a friend who is currently in Sky-music studying to become a sound technician.He provides the sounds and i provide the code.",
-    "preview_link": "https://nikolajoksimovic.github.io/sky-music-game/",
-    "code_link": "https://github.com/NikolaJoksimovic/sky-music-game"
+    "title": "MyPage",
+    "info": "One of the first iterations of my personal page. I just want a reminder to how it all started",
+    "preview_link": "https://nikolajoksimovic.github.io/my-page/",
+    "code_link": "https://github.com/NikolaJoksimovic/my-page",
+    "tools": "",
+    "img": ""
   },
   {
-    "title": "十面埋伏",
-    "info": "Game made for DESKTOP(prefered resolution 1920x1080). Also you need a keyboard to be able to play..I made this in collaboration with a friend who is currently in Sky-music studying to become a sound technician.He provides the sounds and i provide the code.",
-    "preview_link": "https://nikolajoksimovic.github.io/sky-music-game/",
-    "code_link": "https://github.com/NikolaJoksimovic/sky-music-game"
+    "title": "Battle Realms",
+    "info": "Tribute page to one of my top two childhood video games",
+    "preview_link": "https://nikolajoksimovic.github.io/battle-realms-bootstrap/",
+    "code_link": "https://github.com/NikolaJoksimovic/battle-realms-bootstrap",
+    "tools": "",
+    "img": ""
   },
+
   {
-    "title": "十面埋伏",
-    "info": "Game made for DESKTOP(prefered resolution 1920x1080). Also you need a keyboard to be able to play..I made this in collaboration with a friend who is currently in Sky-music studying to become a sound technician.He provides the sounds and i provide the code.",
-    "preview_link": "https://nikolajoksimovic.github.io/sky-music-game/",
-    "code_link": "https://github.com/NikolaJoksimovic/sky-music-game"
-  },
-  {
-    "title": "十面埋伏",
-    "info": "Game made for DESKTOP(prefered resolution 1920x1080). Also you need a keyboard to be able to play..I made this in collaboration with a friend who is currently in Sky-music studying to become a sound technician.He provides the sounds and i provide the code.",
-    "preview_link": "https://nikolajoksimovic.github.io/sky-music-game/",
-    "code_link": "https://github.com/NikolaJoksimovic/sky-music-game"
+    "title": "NotTinder",
+    "info": "Work still in progress.. In the end I am hoping to make a web app that is similar to Tinder, but it just isn't Tinder, more like Not Tinder. In this project I am also working with some of my friends who actually came up with the idea.",
+    "preview_link": "https://not-tinder.netlify.app/",
+    "code_link": "https://github.com/NikolaJoksimovic/not-tinder",
+    "tools": "",
+    "img": ""
   }
 ]

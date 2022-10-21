@@ -25,11 +25,7 @@
   --link-margin-lg: 0.1em 0 0.1em 0;
 }
 .lightmode {
-  --bg-primary: linear-gradient(
-    45deg,
-    rgba(240, 240, 240, 0.95),
-    rgb(255, 255, 255)
-  );
+  --bg-primary: linear-gradient(45deg, rgba(0, 0, 0, 0.2), rgb(255, 255, 255));
   --clr-primary: rgb(0, 0, 0);
   --clr-secondary: rgb(250, 246, 246);
   --clr-accent: rgb(62, 128, 182);
