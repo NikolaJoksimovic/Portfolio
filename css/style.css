@@ -288,6 +288,11 @@ button:hover {
   background-color: var(--clr-primary);
   padding-left: 1em;
 }
+.project-tools {
+  color: var(--clr-accent);
+  padding: var(--link-padding-sm);
+  margin: var(--link-margin-sm);
+}
 /* END OF PROJECT SECTION */
 
 /* CONTACT SECTION */

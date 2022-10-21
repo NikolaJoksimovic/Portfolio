@@ -10,6 +10,13 @@ $(window).ready(() => {
   // fetching data and returning elements
   $.getJSON({ url: "./data/projects.json" }).done((items) => {
     items.forEach((item) => {
+      let toolsUsed = "";
+      // console.log(item.tools);
+      const tools = item.tools;
+      tools.forEach((tool) => {
+        toolsUsed +=
+          tool + (tools.indexOf(tool) === tools.length - 1 ? "" : ", ");
+      });
       const image = item.img ? item.img : "../images/default_item_img.jpg";
       $(".project-items").append(
         `<div class="project-item">
@@ -41,6 +48,7 @@ $(window).ready(() => {
                 >&lt;code&gt;</a
               >
             </div>
+            <div class="project-tools"><p>{ ${toolsUsed} }</p></div>
           </div>
           `
       );
