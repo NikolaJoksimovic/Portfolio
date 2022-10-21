@@ -38,6 +38,9 @@
   margin: 0;
   padding: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: var(--font-primary);
   font-weight: 500;
@@ -323,3 +326,21 @@ button:hover {
   background-color: var(--clr-primary);
 }
 /* END OF CONTACT SECTION */
+.up-btn {
+  width: 2.5em;
+  height: 2.5em;
+  position: fixed;
+  right: 1.4em;
+  bottom: 1.4em;
+  background-color: var(--clr-secondary);
+  opacity: 0.85;
+  transition: var(--transition025);
+}
+.up-btn-show {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  border: none;
+}

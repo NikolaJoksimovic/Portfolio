@@ -5,7 +5,7 @@
     "preview_link": "https://nikolajoksimovic.github.io/sky-music-game/",
     "code_link": "https://github.com/NikolaJoksimovic/sky-music-game",
     "tools": ["Vanilla JS", "HTML5", "CSS3"],
-    "img": ""
+    "img": "./images/sky_game_img.png"
   },
   {
     "title": "MyPage",
@@ -13,7 +13,7 @@
     "preview_link": "https://nikolajoksimovic.github.io/my-page/",
     "code_link": "https://github.com/NikolaJoksimovic/my-page",
     "tools": ["Vanilla JS", "HTML5", "CSS3"],
-    "img": ""
+    "img": "./images/my_page_img.png"
   },
   {
     "title": "Battle Realms",
