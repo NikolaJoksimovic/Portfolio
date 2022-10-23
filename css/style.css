@@ -90,6 +90,11 @@ button:hover {
   border: var(--btn-border-primary);
   color: var(--clr-secondary);
 }
+span {
+  display: inline-block;
+  width: 1.1em;
+}
+
 @media only screen and (max-height: 475px) {
   section {
     min-height: 475px;
@@ -203,6 +208,9 @@ button:hover {
 }
 .about {
   padding-right: 2em;
+}
+#age-days {
+  width: 1.5em;
 }
 @media screen and (min-width: 768px) {
   .underline {
