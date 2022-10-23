@@ -1,12 +1,11 @@
 export const createItem = (item) => {
   let toolsUsed = "";
-  // console.log(item.tools);
   const tools = item.tools;
   tools.forEach((tool) => {
     toolsUsed += tool + (tools.indexOf(tool) === tools.length - 1 ? "" : ", ");
   });
   const image = item.img ? item.img : "../images/default_item_img.jpg";
-  return `<div class="project-item">
+  return `<div class="project-item hide">
             <div class="project-title">
               <h4>${item.title}</h4>
               <div class="underline"></div>

@@ -8,11 +8,32 @@ $(window).ready((e) => {
     items.forEach((item) => {
       $(".project-items").append(createItem(item));
     });
+
+    // observer
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          entry.target.classList.toggle("show", entry.isIntersecting);
+          if (entry.isIntersecting) {
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.6 }
+    );
+    const projectItems = $(".project-item").toArray();
+    projectItems.forEach((item) => {
+      console.log(item);
+      observer.observe(item);
+    });
   });
+
   // color mode
   $(".clr-btn").click(() => {
     $("body").toggleClass("lightmode");
   });
+
+  // btn functionalities
   $(".projects-btn").click(() => {
     $(window).scrollTop($(".project-section").offset().top);
   });
@@ -23,11 +44,10 @@ $(window).ready((e) => {
     $(window).scrollTop(0);
   });
   $(window).scroll(() => {
-    console.log($(window).scrollTop(), $(window).height() * 1.2);
     if ($(window).scrollTop() >= $(window).height() * 1.2) {
-      $(".up-btn").removeClass("up-btn-show");
+      $(".up-btn").removeClass("up-btn-hide");
     } else {
-      $(".up-btn").addClass("up-btn-show");
+      $(".up-btn").addClass("up-btn-hide");
     }
   });
 });
