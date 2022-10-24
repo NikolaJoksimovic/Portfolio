@@ -67,7 +67,7 @@ $(window).ready((e) => {
   });
 
   // age-calc
-  const my_dob = new Date("12/18/1995");
+  const my_dob = new Date("12/18/1995, 3:45:00 AM");
   const min = 1000 * 60;
   const hour = 60 * min;
   const day = 24 * hour;
