@@ -1,4 +1,5 @@
 import { createItem } from "./projectItem.js";
+
 $(window).ready((e) => {
   // preloader
   setTimeout(() => {
