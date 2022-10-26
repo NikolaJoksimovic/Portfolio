@@ -8,14 +8,6 @@
     "img": "./images/sky_game_img.png"
   },
   {
-    "title": "MyPage",
-    "info": "One of the first iterations of my personal page. I just want a reminder to how it all started",
-    "preview_link": "https://nikolajoksimovic.github.io/my-page/",
-    "code_link": "https://github.com/NikolaJoksimovic/my-page",
-    "tools": ["Vanilla JS", "HTML5", "CSS3"],
-    "img": "./images/my_page_img.png"
-  },
-  {
     "title": "Battle Realms",
     "info": "Tribute page to one of my top two childhood video games.",
     "preview_link": "https://nikolajoksimovic.github.io/battle-realms-bootstrap/",
