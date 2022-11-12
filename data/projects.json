@@ -1,5 +1,13 @@
 [
   {
+    "title": "Pop Star Studio",
+    "info": "Website I made for a firend. Hosted on Heroku(until they shut down free hosting for Node.js :(... ). You can become a member(create account) or just listen to some music. Also there is a language selector. For now it is just an embeded YouTube 24/7 live stream, but later on there will be music of his own.",
+    "preview_link": "https://secret-chamber-76247.herokuapp.com/",
+    "code_link": "https://github.com/NikolaJoksimovic/pop-star-studio",
+    "tools": ["React", "Node.js", "MongoDB", "HTML5", "CSS3"],
+    "img": ""
+  },
+  {
     "title": "Login Form",
     "info": "Simple login form with hashed passwords and authentication token made using React for frontend and Node.js for backend. For database i used MongoDB. All errors handled appropriately.",
     "preview_link": "https://login-form-heroku.herokuapp.com/",
