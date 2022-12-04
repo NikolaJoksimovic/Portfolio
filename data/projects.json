@@ -9,7 +9,7 @@
   },
   {
     "title": "FriendZi",
-    "info": "Work still in progress... .",
+    "info": "Work in progress... For now, it's just a glorified login form.",
     "preview_link": "https://friendzi.netlify.app/",
     "code_link": "https://github.com/NikolaJoksimovic/friendzi-server",
     "tools": ["React", "Node.js", "MongoDB", "HTML5", "CSS3, Redux"],
