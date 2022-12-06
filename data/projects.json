@@ -1,18 +1,18 @@
 [
   {
+    "title": "FriendZi",
+    "info": "Work in progress... For now, it's just a glorified login form. Server is hosted on Render.com free version, so connecting is a bit slow.",
+    "preview_link": "https://friendzi.netlify.app/",
+    "code_link": "https://github.com/NikolaJoksimovic/friendzi-server",
+    "tools": ["React", "Node.js", "MongoDB", "HTML5", "CSS3, Redux"],
+    "img": ""
+  },
+  {
     "title": "Pop Star Studio",
     "info": "Website I made for a firend. Hosted on Render.com. You can become a member(create an account) or just listen to some music. Also there is a language selector. For now it is just an embeded YouTube 24/7 live stream, but later on there will be music of his own.",
     "preview_link": "https://pop-star-stuido.onrender.com/",
     "code_link": "https://github.com/NikolaJoksimovic/pop-star-studio",
     "tools": ["React", "Node.js", "MongoDB", "HTML5", "CSS3"],
-    "img": ""
-  },
-  {
-    "title": "FriendZi",
-    "info": "Work in progress... For now, it's just a glorified login form.",
-    "preview_link": "https://friendzi.netlify.app/",
-    "code_link": "https://github.com/NikolaJoksimovic/friendzi-server",
-    "tools": ["React", "Node.js", "MongoDB", "HTML5", "CSS3, Redux"],
     "img": ""
   },
   {
