@@ -1,7 +1,7 @@
 [
   {
     "title": "FriendZi",
-    "info": "IMPORTANT: Server is hosted on Render.com free plan, so initial connecting is a bit slower. Work in progress... Should be something like a dating app, but for making friends, when finished.",
+    "info": "IMPORTANT: Server is hosted on Render.com free plan, so initial connecting is a bit slower. Should be something like a dating app, but for making friends, when finished. You create an account, book events and later converse with people that are in your event room.",
     "preview_link": "https://friendzi.netlify.app/",
     "code_link": "https://github.com/NikolaJoksimovic/friendzi-server",
     "tools": ["React", "Node.js", "MongoDB", "HTML5", "CSS3, Redux"],
@@ -9,7 +9,7 @@
   },
   {
     "title": "Pop Star Studio",
-    "info": "Website I made for a firend. Hosted on Render.com. You can become a member(create an account) or just listen to some music. Also there is a language selector. For now it is just an embeded YouTube 24/7 live stream, but later on there will be music of his own.",
+    "info": "IMPORTANT: Server is hosted on Render.com free plan, so initial connecting is a bit slower. Website I made for a firend. You can become a member(create an account) or just listen to some music. Also there is a language selector. For now it is just an embeded YouTube 24/7 live stream, but later on there will be music of his own.",
     "preview_link": "https://pop-star-stuido.onrender.com/",
     "code_link": "https://github.com/NikolaJoksimovic/pop-star-studio",
     "tools": ["React", "Node.js", "MongoDB", "HTML5", "CSS3"],
@@ -17,7 +17,7 @@
   },
   {
     "title": "Login Form",
-    "info": "Simple login form with hashed passwords and authentication token made using React for frontend and Node.js for backend. For database i used MongoDB. All errors handled appropriately.",
+    "info": "IMPORTANT: Server is hosted on Render.com free plan, so initial connecting is a bit slower. Simple login form with hashed passwords and authentication token made using React for frontend and Node.js for backend. For database i used MongoDB. ",
     "preview_link": "https://login-form-m1uj.onrender.com/",
     "code_link": "https://github.com/NikolaJoksimovic/login-form",
     "tools": ["React", "Node.js", "MongoDB", "HTML5", "CSS3"],
