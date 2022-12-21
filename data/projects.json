@@ -1,7 +1,7 @@
 [
   {
     "title": "FriendZi",
-    "info": "Work in progress... For now, it's just a glorified login form. Server is hosted on Render.com free version, so connecting is a bit slow.",
+    "info": "IMPORTANT: Server is hosted on Render.com free plan, so initial connecting is a bit slower. Work in progress... Should be something like a dating app, but for making friends, when finished.",
     "preview_link": "https://friendzi.netlify.app/",
     "code_link": "https://github.com/NikolaJoksimovic/friendzi-server",
     "tools": ["React", "Node.js", "MongoDB", "HTML5", "CSS3, Redux"],
@@ -36,7 +36,7 @@
     "info": "Tribute page to one of my top two childhood video games.",
     "preview_link": "https://nikolajoksimovic.github.io/battle-realms-bootstrap/",
     "code_link": "https://github.com/NikolaJoksimovic/battle-realms-bootstrap",
-    "tools": ["Vanilla JS", "HTML5", "CSS3", "Bootstrap4"],
+    "tools": ["HTML5", "CSS3", "Bootstrap4"],
     "img": ""
   }
 ]
