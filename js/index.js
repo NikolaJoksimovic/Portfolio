@@ -5,30 +5,33 @@ $(window).ready((e) => {
   setTimeout(() => {
     $(".preloader").addClass("preloader-hide");
   }, 1000);
+  setTimeout(() => {
+    $(".preloader").css("display", "none");
+  }, 1500);
 
-  // fetching data and returning elements
-  $.getJSON({ url: "./data/projects.json" }).done((items) => {
-    items.forEach((item) => {
-      $(".project-items").append(createItem(item));
-    });
+  // // fetching data and returning elements
+  // $.getJSON({ url: "./data/projects.json" }).done((items) => {
+  //   items.forEach((item) => {
+  //     $(".project-items").append(createItem(item));
+  //   });
 
-    // observer
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          entry.target.classList.toggle("show", entry.isIntersecting);
-          if (entry.isIntersecting) {
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.6 }
-    );
-    const projectItems = $(".project-item").toArray();
-    projectItems.forEach((item) => {
-      observer.observe(item);
-    });
-  });
+  //   // observer
+  //   const observer = new IntersectionObserver(
+  //     (entries) => {
+  //       entries.forEach((entry) => {
+  //         entry.target.classList.toggle("show", entry.isIntersecting);
+  //         if (entry.isIntersecting) {
+  //           observer.unobserve(entry.target);
+  //         }
+  //       });
+  //     },
+  //     { threshold: 0.6 }
+  //   );
+  //   const projectItems = $(".project-item").toArray();
+  //   projectItems.forEach((item) => {
+  //     observer.observe(item);
+  //   });
+  // });
 
   // color mode
   const local_storage = $(window)[0].localStorage;

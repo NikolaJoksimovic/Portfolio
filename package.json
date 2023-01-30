@@ -1,0 +1,26 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "\"# portfolio\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-changes": "npx gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NikolaJoksimovic/portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NikolaJoksimovic/portfolio/issues"
+  },
+  "homepage": "https://github.com/NikolaJoksimovic/portfolio#readme",
+  "devDependencies": {
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.57.1",
+    "gulp": "^4.0.2"
+  }
+}
