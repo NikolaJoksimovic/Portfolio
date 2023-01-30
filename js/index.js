@@ -9,6 +9,40 @@ $(window).ready((e) => {
     $(".preloader").css("display", "none");
   }, 1500);
 
+  // home section
+  const homeSectionPaddingTop = $(".home-section").css("padding-top");
+  const paddingDiff =
+    homeSectionPaddingTop.slice(0, homeSectionPaddingTop.indexOf("p")) * 2;
+  let homeHeaderHeight = 0;
+  $("#home-header")
+    .children()
+    .toArray()
+    .forEach((child) => {
+      homeHeaderHeight += $(child).outerHeight(true);
+    });
+  $(".section-btns").css(
+    "height",
+    `${$(window).outerHeight(true) - paddingDiff - homeHeaderHeight}px`
+  );
+
+  // resizing event listener
+  $(window).resize(() => {
+    const homeSectionPaddingTop = $(".home-section").css("padding-top");
+    const paddingDiff =
+      homeSectionPaddingTop.slice(0, homeSectionPaddingTop.indexOf("p")) * 2;
+    let homeHeaderHeight = 0;
+    $("#home-header")
+      .children()
+      .toArray()
+      .forEach((child) => {
+        homeHeaderHeight += $(child).outerHeight(true);
+      });
+    $(".section-btns").css(
+      "height",
+      `${$(window).outerHeight(true) - paddingDiff - homeHeaderHeight}px`
+    );
+  });
+
   // // fetching data and returning elements
   // $.getJSON({ url: "./data/projects.json" }).done((items) => {
   //   items.forEach((item) => {

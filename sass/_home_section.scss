@@ -1,0 +1,29 @@
+$margin-sm: $base-margin;
+$margin-md: $base-margin * 1.5;
+$margin-lg: $base-margin * 2.5;
+
+.home-section {
+  min-height: 100vh;
+
+  header {
+    .myName {
+      max-width: 420px;
+      margin: $margin-sm 0 0 0;
+    }
+    .underline {
+      height: 1px;
+      width: 100%;
+      background-color: $clr-primary;
+    }
+    h4 {
+      margin: 0 0 $margin-sm 0;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .home-section {
+    header .myName {
+      margin: $margin-md 0 $margin-md 0;
+    }
+  }
+}

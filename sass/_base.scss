@@ -6,11 +6,11 @@
 body {
   font-family: "roboto";
   background-color: $clr-secondary;
+  color: $clr-primary;
 }
 h1 {
   font-size: $h1-font-size-sm;
   font-weight: 900;
-  color: $clr-primary;
   text-transform: capitalize;
 }
 h2 {
@@ -25,13 +25,32 @@ h4 {
 h5 {
   font-size: $h5-font-size-sm;
 }
+p {
+  font-size: $p-font-size-sm;
+}
 @media screen and (min-width: 768px) {
   h1 {
     font-size: $h1-font-size-md;
+  }
+  h2 {
+    font-size: $h2-font-size-md;
+  }
+  h3 {
+    font-size: $h3-font-size-md;
+  }
+  h4 {
+    font-size: $h4-font-size-md;
+  }
+  h5 {
+    font-size: $h5-font-size-md;
+  }
+  p {
+    font-size: $p-font-size-md;
   }
 }
 section {
   padding: $paddig-section;
   max-width: 1440px;
   margin: auto;
+  min-height: 90vh;
 }
