@@ -21,7 +21,7 @@ $(window).ready((e) => {
       homeHeaderHeight += $(child).outerHeight(true);
     });
   $(".section-btns").css(
-    "height",
+    "min-height",
     `${$(window).outerHeight(true) - paddingDiff - homeHeaderHeight}px`
   );
 
@@ -38,7 +38,7 @@ $(window).ready((e) => {
         homeHeaderHeight += $(child).outerHeight(true);
       });
     $(".section-btns").css(
-      "height",
+      "min-height",
       `${$(window).outerHeight(true) - paddingDiff - homeHeaderHeight}px`
     );
   });
@@ -87,6 +87,9 @@ $(window).ready((e) => {
   });
 
   // btn functionalities
+  $(".resume-btn").click(() => {
+    $(window).scrollTop($(".resume-section").offset().top);
+  });
   $(".projects-btn").click(() => {
     $(window).scrollTop($(".project-section").offset().top);
   });
